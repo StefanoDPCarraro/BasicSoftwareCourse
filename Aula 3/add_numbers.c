@@ -2,10 +2,7 @@
 
 int main()
 {
-    int num1 = 0;
-    int num2 = 0;
-    int num3 = 0;
-    int sum = 0;
+    int num1, num2, num3, sum = 0;
     printf("Type the first number: ");
     scanf("%d", &num1);
     printf("Type the second number: ");
