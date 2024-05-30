@@ -1,0 +1,1 @@
+void stair(int num);

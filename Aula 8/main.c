@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "to_uppercase.h"
 #include "higher.h"
+#include "stair.h"
 
 int main()
 {
@@ -11,10 +12,11 @@ int main()
         printf("Select your option: \n");
         printf("1 - To uppercase \n");
         printf("2 - Higher number \n");
+        printf("3 - Inverted stairs \n");
         scanf("%d", &option);
         if (option == 1)
         {
-            scanf("%c", &test_char); //Debugging the scanner (actually registers only a line break)
+            scanf("%c", &test_char); // Debugging the scanner (actually registers only a line break)
             printf("Type a letter: \n");
             scanf("%c", &test_char);
             printf("The uppercase version of the typed character is: %c\n", to_uppercase(test_char));
@@ -30,6 +32,13 @@ int main()
                 number[i] = next_num;
             }
             printf("Higher number of the ones typed: %d\n", higher(number));
+        }
+        if (option == 3)
+        {
+            int num;
+            printf("Type a number: ");
+            scanf("%d", &num);
+            stair(num);
         }
     }
     return 0;
